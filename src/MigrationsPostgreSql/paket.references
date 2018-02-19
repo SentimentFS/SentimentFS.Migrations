@@ -1,4 +1,7 @@
 FSharp.Core
 Simple.Migrations
 Npgsql
-Argu
+Microsoft.Extensions.Configuration
+Microsoft.Extensions.Configuration.FileExtensions
+Microsoft.Extensions.Configuration.Json
+Microsoft.Extensions.Configuration.Binder

@@ -4,7 +4,10 @@ framework: netcoreapp2.0
 nuget FSharp.Core
 nuget Simple.Migrations
 nuget Npgsql
-nuget Argu
+nuget Microsoft.Extensions.Configuration
+nuget Microsoft.Extensions.Configuration.FileExtensions
+nuget Microsoft.Extensions.Configuration.Json
+nuget Microsoft.Extensions.Configuration.Binder
 
 group Build
 source https://www.nuget.org/api/v2
