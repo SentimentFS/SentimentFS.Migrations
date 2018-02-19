@@ -6,7 +6,8 @@
     <DebugType>portable</DebugType>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="MigrationsPostgreSql.fs" />
+    <Compile Include="01_Tweet.fs" />
+    <Compile Include="Program.fs" />
     <None Include="App.config" />
   </ItemGroup>
   <Import Project="..\..\.paket\Paket.Restore.targets" />
