@@ -4,6 +4,8 @@ framework: netcoreapp2.0
 nuget FSharp.Core
 nuget Simple.Migrations
 nuget Npgsql
+nuget NEST 
+nuget Dapper 
 nuget Microsoft.Extensions.Configuration
 nuget Microsoft.Extensions.Configuration.FileExtensions
 nuget Microsoft.Extensions.Configuration.Json
