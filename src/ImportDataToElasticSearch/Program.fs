@@ -16,7 +16,7 @@ module Program =
         async {
             let! tweets = Postgresql.tweetsData (config.GetValue<string>("Data:Postgres:ConnectionString"))
             let elasticConnection = elasticClient(Uri(config.GetValue<string>("Data:ElasticSearch:Connection")))
-            do! ElasticSearch.insertTweets elasticConnection tweets |> Async.Ignore
+            do! tweets |> Seq.map(fun tweet -> ElasticSearch.insertTweet elasticConnection tweet) |> Seq.toArray |> Async.Parallel |> Async.Ignore
             return ()
         } |> Async.RunSynchronously
         printfn "%A" argv

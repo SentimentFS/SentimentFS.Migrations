@@ -19,7 +19,7 @@ module ElasticSearch =
     let indexer index (ides:IndexDescriptor<'T>)  =
         ides.Index(index) :> IIndexRequest<'T>
 
-    let insertTweet (tweet: TweetDto)(client: ElasticClient) =
+    let insertTweet(client: ElasticClient) (tweet: TweetDto) =
         async {
             return! client.IndexAsync(tweet, (fun idx -> indexer tweetsIndexName idx)) |> Async.AwaitTask
         }
