@@ -25,7 +25,7 @@ module ElasticSearch =
         }
 
 
-    let insertTweets (tweets: TweetDto array)(client: ElasticClient) =
+    let insertTweets (client: ElasticClient)(tweets: TweetDto seq) =
         async {
             return! client.IndexManyAsync(tweets, tweetsIndexName, tweetTypeName) |> Async.AwaitTask
         }

@@ -9,8 +9,13 @@
     <Compile Include="Types.fs" />
     <Compile Include="Postgres.fs" />
     <Compile Include="ElasticSearch.fs" />
-    <Compile Include="ImportDataToElasticSearch.fs" />
+    <Compile Include="Program.fs" />
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="*.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="..\..\.paket\Paket.Restore.targets" />
 </Project>

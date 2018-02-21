@@ -9,11 +9,10 @@
     <Compile Include="01_Tweet.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
-    <ItemGroup>
+  <ItemGroup>
     <Content Include="*.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
-
   <Import Project="..\..\.paket\Paket.Restore.targets" />
 </Project>

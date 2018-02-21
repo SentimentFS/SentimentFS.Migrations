@@ -1,6 +1,6 @@
 namespace ImportDataToElasticSearch
 
-module Postgres =
+module Postgresql =
     open ImportDataToElasticSearch.Types
     open Dapper
     open Npgsql
