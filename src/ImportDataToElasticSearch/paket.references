@@ -2,3 +2,7 @@ FSharp.Core
 Npgsql
 NEST 
 Dapper 
+Microsoft.Extensions.Configuration
+Microsoft.Extensions.Configuration.FileExtensions
+Microsoft.Extensions.Configuration.Json
+Microsoft.Extensions.Configuration.Binder
